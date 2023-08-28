@@ -6,8 +6,9 @@ function loadUser() {
 function displayData(users) {
     const postContainer = document.getElementById('post-container');
     for (const user of users) {
-        console.log(user);
+
         const postDiv = document.createElement('div');
+        postDiv.classList.add('post')
         postDiv.innerHTML = `
         <h2>${user.userId}</h2>
         <h3>${user.title}</h3>
